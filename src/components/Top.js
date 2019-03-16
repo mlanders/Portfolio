@@ -7,7 +7,7 @@ const TopSection = styled.section`
 	height: 100vh;
 	background-image: url(/img/trianglify.svg);
 	background-color: #141414;
-	background-size: 100%;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	color: #3c81e3;
 	display: flex;
