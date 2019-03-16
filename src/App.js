@@ -1,28 +1,32 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import { Route } from 'react-router-dom';
+import Projects from './components/projects/Projects';
+import db from './data.js';
+import Top from './components/Top';
+import Bottom from './components/Bottom';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+	font-family: 'Roboto', sans-serif;
+
+`;
+
+function App() {
+	const [data, setData] = useState([]);
+
+	useEffect(() => {
+		setData(db);
+	});
+
+	return (
+		<React.Fragment>
+			<GlobalStyle />
+			<Top />
+			<Route exact path="/" render={props => <Projects {...props} data={data} />} />
+			<Bottom />
+		</React.Fragment>
+	);
 }
 
 export default App;
