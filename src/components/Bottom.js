@@ -48,7 +48,7 @@ function Bottom() {
 				{/* <Contact /> */}
 				<ContactInfo>
 					<span>
-						<b>Location:</b> Sacramento Region
+						<b>Location:</b> Elk Grove, CA
 					</span>
 					<span>
 						<b>Email:</b>
