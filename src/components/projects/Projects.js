@@ -87,7 +87,7 @@ function Projects(props) {
 						<RowContent>
 							{/* <h2>{item.name}</h2> */}
 							<p>{item.description}</p>
-							<div className='rowBtns'>
+							<div className="rowBtns">
 								<Button href={item.github}>GitHub</Button>
 								<Button href={item.preview}>View</Button>
 								<Tags>

@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import trianglify from '../img/trianglify.svg';
 
 const TopSection = styled.section`
 	box-sizing: border-box;
 	width: 100%;
 	height: 100vh;
-	background-image: url(/img/trianglify.svg);
+	background-image: url(${trianglify});
 	background-color: #141414;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
