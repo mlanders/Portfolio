@@ -52,7 +52,7 @@ function Bottom() {
 					</span>
 					<span>
 						<b>Email:</b>
-						<a href='mailto:landers.mike@gmail.com' target='_top'>
+						<a href="mailto:landers.mike@gmail.com" target="_top">
 							landers.mike@gmail.com
 						</a>
 					</span>
@@ -62,17 +62,13 @@ function Bottom() {
 				</ContactInfo>
 				<Divider />
 				<Social>
+					<a className="fab fa-linkedin" href="https://linkedin.com/in/mikelanders/" />
+					<a className="fab fa-github-square" href="https://github.com/mlanders" />
+					<a className="fab fa-twitter-square" href="https://twitter.com/MikeLanders" />
 					<a
-						className='fab fa-linkedin'
-						href='https://linkedin.com/in/mikelanders/'
-					/>
-					<a
-						className='fab fa-github-square'
-						href='https://github.com/mlanders'
-					/>
-					<a
-						className='fab fa-twitter-square'
-						href='https://twitter.com/MikeLanders'
+						className="fab fa-dev"
+						title="mlanders's DEV Profile"
+						href="https://dev.to/mlanders"
 					/>
 				</Social>
 			</BottomSection>
