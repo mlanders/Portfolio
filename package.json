@@ -10,6 +10,7 @@
 		"bootstrap": "^4.2.1",
 		"dotenv": "^6.2.0",
 		"eslint-plugin-react-hooks": "^1.2.0",
+		"now": "^15.0.1",
 		"react": "16.8.3",
 		"react-app-env": "^1.2.3",
 		"react-dom": "16.8.3",
