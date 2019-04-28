@@ -15,12 +15,12 @@ function Projects(props) {
 							<ButtonWrapper>
 								<Button href={item.preview}>Visit Site</Button>
 								<Button href={item.github}>View Code</Button>
+								<Tags>
+									{item.tags.map(tag => (
+										<i className={` fab ${tag}`} />
+									))}
+								</Tags>
 							</ButtonWrapper>
-							<Tags>
-								{item.tags.map(tag => (
-									<i className={` fab ${tag}`} />
-								))}
-							</Tags>
 						</RowContent>
 					</Project>
 				);
@@ -54,6 +54,9 @@ const Wrapper = styled.div`
 `;
 const ButtonWrapper = styled.div`
 	margin: 10px 0;
+	position: sticky;
+	top: 100%;
+	display: flex;
 `;
 const Button = styled.a`
 	text-decoration: none;
@@ -92,6 +95,9 @@ const RowContent = styled.div`
 	flex-direction: column;
 	font-size: 1.2rem;
 	padding: 10px;
+	width: 100%;
+	max-height: 400px;
+	height: 100%;
 	background-color: #eef1ef;
 	color: #5e6572;
 	border-bottom-left-radius: 4px;
