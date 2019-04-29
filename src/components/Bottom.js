@@ -80,6 +80,9 @@ const Social = styled.section`
 		color: black;
 		margin: 15px 5px;
 	}
+	a:hover {
+		color: #7d98a1;
+	}
 `;
 
 const Divider = styled.div`

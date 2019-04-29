@@ -54,9 +54,11 @@ const Wrapper = styled.div`
 `;
 const ButtonWrapper = styled.div`
 	margin: 10px 0;
+	padding: 15px 0 0;
 	position: sticky;
 	top: 100%;
 	display: flex;
+	border-top: 1px solid #a9b4c2;
 `;
 const Button = styled.a`
 	text-decoration: none;
