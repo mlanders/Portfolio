@@ -50,7 +50,7 @@ const Wrapper = styled.div`
 	padding: 45px 5px;
 	background-color: #a9b4c2;
 	-webkit-clip-path: polygon(0% 5%, 100% 0, 100% 100%, 0% 100%);
-	clip-path: polygon(0% 5%, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(0% 30px, 100% 0, 100% 100%, 0% 100%);
 `;
 const ButtonWrapper = styled.div`
 	margin: 10px 0;
