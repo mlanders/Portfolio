@@ -7,7 +7,9 @@ function Projects(props) {
 			{props.data.map(item => {
 				return (
 					<Project key={item.id}>
-						<IMG src={item.img} />
+						<ImgWrapper>
+							<IMG src={item.img} />
+						</ImgWrapper>
 						{/* <img src={item.img} alt={item.name} /> */}
 						<RowContent>
 							<h2>{item.name}</h2>
@@ -15,12 +17,12 @@ function Projects(props) {
 							<ButtonWrapper>
 								<Button href={item.preview}>Visit Site</Button>
 								<Button href={item.github}>View Code</Button>
-								<Tags>
-									{item.tags.map(tag => (
-										<i className={` fab ${tag}`} />
-									))}
-								</Tags>
 							</ButtonWrapper>
+							<Tags>
+								{item.tags.map(tag => (
+									<i className={` fab ${tag}`} />
+								))}
+							</Tags>
 						</RowContent>
 					</Project>
 				);
@@ -30,13 +32,19 @@ function Projects(props) {
 }
 
 export default Projects;
-const IMG = styled.img`
-	background-color: #fff;
+
+const ImgWrapper = styled.div`
 	width: 100%;
-	height: 300px;
-    border-top-left-radius:4px
-    border-top-right-radius:4px
-    border-bottom: 2px solid #5E6572;
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom: 2px solid #5e6572;
+`;
+const IMG = styled.img`
+	/* height: auto; */
+	width: auto;
 `;
 const Wrapper = styled.div`
 	font-family: "Roboto", sans-serif;
@@ -55,8 +63,8 @@ const Wrapper = styled.div`
 const ButtonWrapper = styled.div`
 	margin: 10px 0;
 	padding: 15px 0 0;
-	position: sticky;
-	top: 100%;
+	/* position: sticky; */
+	/* top: 100%; */
 	display: flex;
 	border-top: 1px solid #a9b4c2;
 `;
@@ -84,10 +92,6 @@ const Project = styled.article`
 	max-width: 400px;
 	width: 100%;
 	padding: 5px;
-	img {
-		height: auto;
-		width: 100%;
-	}
 `;
 
 const RowContent = styled.div`

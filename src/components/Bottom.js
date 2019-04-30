@@ -21,23 +21,18 @@ function Bottom() {
 				</ContactInfo>
 				<Divider />
 				<Social>
-					<a
-						className='fab fa-linkedin'
-						href='https://linkedin.com/in/mikelanders/'
-					/>
-					<a
-						className='fab fa-github-square'
-						href='https://github.com/mlanders'
-					/>
-					<a
-						className='fab fa-twitter-square'
-						href='https://twitter.com/MikeLanders'
-					/>
-					<a
-						className='fab fa-dev'
-						title="mlanders's DEV Profile"
-						href='https://dev.to/mlanders'
-					/>
+					<a href='https://linkedin.com/in/mikelanders/'>
+						<div className='fab fa-linkedin' />
+					</a>
+					<a href='https://github.com/mlanders'>
+						<div className='fab fa-github-square' />
+					</a>
+					<a href='https://twitter.com/MikeLanders'>
+						<div className='fab fa-twitter-square' />
+					</a>
+					<a title="mlanders's DEV Profile" href='https://dev.to/mlanders'>
+						<div className='fab fa-dev' />
+					</a>
 				</Social>
 			</BottomSection>
 		</BottomWrapper>
@@ -71,8 +66,8 @@ const ContactInfo = styled.div`
 	font-size: 1.2rem;
 `;
 const Social = styled.section`
-	height: 100px;
 	align-self: center;
+	margin-top: 5px;
 
 	a {
 		font-size: 4rem;
