@@ -24,16 +24,21 @@ function Bottom() {
                 </ContactInfo>
                 <Divider />
                 <Social>
-                    <a href="https://linkedin.com/in/mikelanders/">
+                    <a
+                        aria-label="LinkedIn"
+                        href="https://linkedin.com/in/mikelanders/">
                         <div className="fab fa-linkedin" />
                     </a>
-                    <a href="https://github.com/mlanders">
+                    <a aria-label="GitHub" href="https://github.com/mlanders">
                         <div className="fab fa-github-square" />
                     </a>
-                    <a href="https://twitter.com/MikeLanders">
+                    <a
+                        aria-label="Twitter"
+                        href="https://twitter.com/MikeLanders">
                         <div className="fab fa-twitter-square" />
                     </a>
                     <a
+                        aria-label="DEV"
                         title="mlanders's DEV Profile"
                         href="https://dev.to/mlanders">
                         <div className="fab fa-dev" />

@@ -12,7 +12,7 @@ function Projects(props) {
                     return (
                         <Project key={item.id}>
                             <ImgWrapper>
-                                <IMG src={item.img} />
+                                <IMG alt={item.name} src={item.img} />
                             </ImgWrapper>
                             {/* <img src={item.img} alt={item.name} /> */}
                             <RowContent>
