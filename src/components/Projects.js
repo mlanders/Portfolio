@@ -43,8 +43,11 @@ function Projects(props) {
 export default Projects;
 
 const ImgWrapper = styled.div`
+    box-sizing: border-box;
+    max-width: 400px;
     width: 100%;
     display: flex;
+    padding: 20px;
     justify-content: center;
     background-color: #fff;
     border-top-left-radius: 4px;
@@ -103,6 +106,9 @@ const ProjectWrapper = styled.div`
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
 `;
 const Project = styled.article`
     display: flex;
@@ -119,7 +125,7 @@ const RowContent = styled.div`
     display: flex;
     font-weight: 300;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 10px;
     width: 100%;
     max-height: 400px;

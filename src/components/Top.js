@@ -25,6 +25,7 @@ const Wrapper = styled.div`
 `;
 
 const TopSection = styled.section`
+    box-sizing: border-box;
     max-width: 800px;
     width: 100%;
     height: 500px;

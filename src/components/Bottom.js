@@ -22,7 +22,6 @@ function Bottom() {
                         <b>Phone:</b> 916.541.7604
                     </span>
                 </ContactInfo>
-                <Divider />
                 <Social>
                     <a
                         aria-label="LinkedIn"
@@ -56,20 +55,24 @@ const BottomWrapper = styled.div`
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     width: 100%;
-    padding-top: 20px;
+    padding: 20px;
     background-color: #f1f1f1;
 `;
 const BottomSection = styled.section`
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 15px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     max-width: 800px;
     width: 100%;
+    @media (max-width: 600px) {
+        padding: 15px;
+        flex-direction: column;
+    }
 `;
 const SectionTitle = styled.div`
     max-width: 800px;
@@ -86,9 +89,12 @@ const ContactInfo = styled.div`
 const Social = styled.section`
     align-self: center;
     margin-top: 5px;
+    @media (max-width: 600px) {
+        margin-top: 20px;
+    }
 
     a {
-        font-size: 4rem;
+        font-size: 3rem;
         text-decoration: none;
         color: black;
         margin: 15px 5px;

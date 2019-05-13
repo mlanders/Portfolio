@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
 import Projects from './components/Projects';
 import db from './data.js';
 import Top from './components/Top';
@@ -13,13 +14,17 @@ function App() {
     });
 
     return (
-        <>
+        <SiteWrapper>
             <Top />
             <About />
             <Projects data={data} />
             <Bottom />
-        </>
+        </SiteWrapper>
     );
 }
+
+const SiteWrapper = styled.div`
+    /* padding: 0 15px; */
+`;
 
 export default App;
