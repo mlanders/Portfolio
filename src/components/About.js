@@ -19,8 +19,18 @@ function About() {
                             <em>ABOUT ME</em>
                         </h5>
                         <br />
-                        Developer with a passion for education and crafting
-                        friendly interfaces
+                        <p>
+                            Developer with a passion for education and crafting
+                            friendly interfaces. My specialties are Javascript,
+                            React, Redux,and Express.
+                        </p>
+                        <p>
+                            After ten years in the customer support industry,
+                            I've developed strong problem-solving and
+                            communication skills. I look forward to combining
+                            those skills to help build visually exciting
+                            projects.
+                        </p>
                     </Info>
                     <Skills>
                         <h5>
@@ -166,6 +176,10 @@ const Headshot = styled.img`
 const Info = styled.div`
     font-size: 1.6rem;
     font-weight: 300;
+    p {
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+    }
 `;
 
 const Skills = styled.div`
