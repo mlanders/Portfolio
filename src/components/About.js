@@ -30,7 +30,7 @@ function About() {
                             communication skills. I look forward to combining
                             those skills to help build visually exciting
                             projects.
-                        </p>
+                        </p>{' '}
                     </Info>
                     <Skills>
                         <h5>
