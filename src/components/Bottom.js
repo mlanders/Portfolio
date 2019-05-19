@@ -100,9 +100,3 @@ const Social = styled.section`
 		color: #7d98a1;
 	}
 `;
-
-const Divider = styled.div`
-	border-right: 1px solid gray;
-	height: 75px;
-	align-self: center;
-`;
