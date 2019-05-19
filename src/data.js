@@ -12,12 +12,12 @@ const projects = [
 		github: "https://github.com/training-bot",
 		preview: "https://www.trainingbot.co/",
 		tags: [
-			"fa-html5",
-			"fa-css3-alt",
-			"fa-js-square",
-			"fa-node-js",
-			"fa-aws",
-			"fa-stripe"
+			"fab fa-html5",
+			"fab fa-css3-alt",
+			"fab fa-js-square",
+			"fab fa-node-js",
+			"fas fa-database",
+			"fab fa-stripe"
 		]
 	},
 	{
@@ -28,7 +28,12 @@ const projects = [
 		img: `${project_2}`,
 		github: "https://github.com/luncher2-build-week-org-19/FE-Luncher2",
 		preview: "https://luncher2.netlify.com/",
-		tags: ["fa-html5", "fa-css3-alt", "fa-js-square", "fa-node-js"]
+		tags: [
+			"fab fa-html5",
+			"fab fa-css3-alt",
+			"fab fa-js-square",
+			"fab fa-node-js"
+		]
 	}
 	// {
 	// 	id: 1,
@@ -61,15 +66,16 @@ const projects = [
 	// }
 ];
 /* 
-fa-react
-fa-html5
-fa-css3-alt
-fa-js-square 
-fa-node-js
-fa-python
-fa-angular
-fa-aws
-fa-stripe
+fab fa-react
+fab fa-html5
+fab fa-css3-alt
+fab fa-js-square 
+fab fa-node-js
+fab fa-python
+fab fa-angular
+fab fa-aws
+fab fa-stripe
+fas fa-database
 */
 
 export default projects;

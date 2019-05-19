@@ -74,14 +74,14 @@ const BottomSection = styled.section`
 const SectionTitle = styled.div`
 	max-width: 800px;
 	width: 100%;
-	margin: 0 auto;
+	margin: 0 auto 20px;
 	font-size: 2rem;
 	font-weight: 300;
 `;
 const ContactInfo = styled.div`
 	display: flex;
 	flex-direction: column;
-	font-size: 1.2rem;
+	font-size: 1.8rem;
 `;
 const Social = styled.section`
 	align-self: center;
@@ -91,7 +91,7 @@ const Social = styled.section`
 	}
 
 	a {
-		font-size: 3rem;
+		font-size: 4rem;
 		text-decoration: none;
 		color: black;
 		margin: 15px 5px;
