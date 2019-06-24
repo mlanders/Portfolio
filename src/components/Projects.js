@@ -24,7 +24,7 @@ function Projects(props) {
 								</ButtonWrapper>
 								<Tags>
 									{item.tags.map(tag => (
-										<i className={` fab ${tag}`} />
+										<i className={`${tag}`} />
 									))}
 								</Tags>
 							</RowContent>
@@ -80,7 +80,7 @@ const Button = styled.a`
 	text-decoration: none;
 	padding: 5px 10px;
 	border-radius: 4px;
-	font-size: 1.2rem;
+	font-size: 1.8rem;
 	background-color: #1356aa;
 	color: #fff;
 	margin-right: 5px;
@@ -132,15 +132,15 @@ const RowContent = styled.div`
 	border-bottom-right-radius: 4px;
 	h2 {
 		font-weight: 500;
-		font-size: 1.4rem;
+		font-size: 2rem;
 	}
 	p {
-		font-size: 1.2rem;
+		font-size: 1.8rem;
 		margin: 5px 0;
 	}
 `;
 const Tags = styled.div`
-	font-size: 1.4rem;
+	font-size: 2.3rem;
 	i {
 		padding: 5px;
 	}

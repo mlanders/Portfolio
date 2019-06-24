@@ -61,15 +61,16 @@ const projects = [
     // }
 ];
 /* 
-fa-react
-fa-html5
-fa-css3-alt
-fa-js-square 
-fa-node-js
-fa-python
-fa-angular
-fa-aws
-fa-stripe
+fab fa-react
+fab fa-html5
+fab fa-css3-alt
+fab fa-js-square 
+fab fa-node-js
+fab fa-python
+fab fa-angular
+fab fa-aws
+fab fa-stripe
+fas fa-database
 */
 
 export default projects;
