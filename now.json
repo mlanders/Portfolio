@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "alias": "landers.dev",
+    "alias": ["www.landers.dev", "landers.dev"],
 
     "name": "Portfolio",
     "builds": [
