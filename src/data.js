@@ -1,4 +1,4 @@
-import trainingBot from './img/training-bot.png';
+import trainingBot from './img/trainingBot.png';
 import luncher from './img/Luncher.png';
 import lambdaNotes from './img/lambdaNotes.png';
 
