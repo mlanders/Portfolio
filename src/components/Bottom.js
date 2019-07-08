@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Contact from './Contact';
 
 function Bottom() {
     return (
@@ -44,6 +45,7 @@ function Bottom() {
                     </a>
                 </Social>
             </BottomSection>
+            <Contact />
         </BottomWrapper>
     );
 }
