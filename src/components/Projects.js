@@ -64,9 +64,10 @@ const Styles = styled.div`
     .ImgWrapper {
         box-sizing: border-box;
         max-width: 300px;
+        height: 300px;
         width: 100%;
         display: flex;
-        padding: 20px;
+        /* padding: 20px; */
         justify-content: center;
         background-color: #fff;
         border-top-left-radius: 4px;
@@ -80,6 +81,8 @@ const Styles = styled.div`
     .IMG {
         /* height: auto; */
         width: auto;
+        /* height: 300px;
+        width: 300px; */
     }
     .ButtonWrapper {
         width: 100%;
@@ -110,6 +113,7 @@ const Styles = styled.div`
 
         max-width: 800px;
         width: 100%;
+        height: 300px;
         /* padding: 5px; */
         margin: 5px;
         border-radius: 4px;

@@ -1,6 +1,6 @@
 import trainingBot from './img/training-bot.png';
 import luncher from './img/Luncher.png';
-import lambdaNotes from './img/lambdaNotes.jpg';
+import lambdaNotes from './img/lambdaNotes.png';
 
 const projects = [
     {
