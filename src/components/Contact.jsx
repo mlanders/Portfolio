@@ -29,7 +29,7 @@ const Contact = () => {
         setState({ ...state, [e.target.name]: e.target.value });
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form name="contact" onSubmit={handleSubmit}>
             <p>
                 <label>
                     Your Name:{' '}
