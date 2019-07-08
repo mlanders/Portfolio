@@ -6,7 +6,8 @@ const Contact = () => {
             name="contact"
             method="POST"
             netlify-honeypot="bot-field"
-            data-netlify="true">
+            data-netlify="true"
+            action="/">
             <p style={{ visibility: 'hidden' }}>
                 <label>
                     Don’t fill this out if you're human:{' '}
@@ -14,14 +15,12 @@ const Contact = () => {
                 </label>
             </p>
             <p>
-                <label>
-                    Email: <input type="text" name="email" />
-                </label>
+                <label>Email: </label>
+                <input type="email" name="email" required />
             </p>
             <p>
-                <label>
-                    Message: <textarea name="message" />
-                </label>
+                <label>Message: </label>
+                <textarea name="message" required />
             </p>
             <p>
                 <button type="submit">Submit</button>

@@ -9,43 +9,49 @@ function Bottom() {
                 <h5>CONTACT</h5>
             </SectionTitle>
             <BottomSection>
-                <ContactInfo>
-                    <span>
-                        <b>Location:</b> Elk Grove, CA
-                    </span>
-                    <span>
-                        <b>Email: </b>
-                        <a href="mailto:landers.mike@gmail.com" target="_top">
-                            landers.mike@gmail.com
+                <div>
+                    <ContactInfo>
+                        <span>
+                            <b>Location:</b> Elk Grove, CA
+                        </span>
+                        <span>
+                            <b>Email: </b>
+                            <a
+                                href="mailto:landers.mike@gmail.com"
+                                target="_top">
+                                landers.mike@gmail.com
+                            </a>
+                        </span>
+                        <span>
+                            <b>Phone:</b> 916.541.7604
+                        </span>
+                    </ContactInfo>
+                    <Social>
+                        <a
+                            aria-label="LinkedIn"
+                            href="https://linkedin.com/in/mikelanders/">
+                            <div className="fab fa-linkedin" />
                         </a>
-                    </span>
-                    <span>
-                        <b>Phone:</b> 916.541.7604
-                    </span>
-                </ContactInfo>
-                <Social>
-                    <a
-                        aria-label="LinkedIn"
-                        href="https://linkedin.com/in/mikelanders/">
-                        <div className="fab fa-linkedin" />
-                    </a>
-                    <a aria-label="GitHub" href="https://github.com/mlanders">
-                        <div className="fab fa-github-square" />
-                    </a>
-                    <a
-                        aria-label="Twitter"
-                        href="https://twitter.com/MikeLanders">
-                        <div className="fab fa-twitter-square" />
-                    </a>
-                    <a
-                        aria-label="DEV"
-                        title="mlanders's DEV Profile"
-                        href="https://dev.to/mlanders">
-                        <div className="fab fa-dev" />
-                    </a>
-                </Social>
+                        <a
+                            aria-label="GitHub"
+                            href="https://github.com/mlanders">
+                            <div className="fab fa-github-square" />
+                        </a>
+                        <a
+                            aria-label="Twitter"
+                            href="https://twitter.com/MikeLanders">
+                            <div className="fab fa-twitter-square" />
+                        </a>
+                        <a
+                            aria-label="DEV"
+                            title="mlanders's DEV Profile"
+                            href="https://dev.to/mlanders">
+                            <div className="fab fa-dev" />
+                        </a>
+                    </Social>
+                </div>
+                <Contact />
             </BottomSection>
-            <Contact />
         </BottomWrapper>
     );
 }
