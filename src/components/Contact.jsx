@@ -34,6 +34,7 @@ const Contact = () => {
             <form name="contact" onSubmit={handleSubmit}>
                 <p>
                     <input
+                        aria-label="name"
                         type="text"
                         name="name"
                         placeholder="Your name"
@@ -43,6 +44,7 @@ const Contact = () => {
                 </p>
                 <p>
                     <input
+                        aria-label="email"
                         type="email"
                         name="email"
                         required
@@ -53,6 +55,7 @@ const Contact = () => {
                 </p>
                 <p>
                     <textarea
+                        aria-label="message"
                         name="message"
                         placeholder="Message"
                         value={state.message}
@@ -60,7 +63,9 @@ const Contact = () => {
                     />
                 </p>
                 <p>
-                    <button type="submit">Send</button>
+                    <button aria-label="Send" type="submit">
+                        Send
+                    </button>
                 </p>
             </form>
         </Styles>
