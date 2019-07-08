@@ -11,16 +11,17 @@ function Projects(props) {
                 {props.data.map(item => {
                     return (
                         <div className="Project" key={item.id}>
-                            <div>
-                                <div className="ImgWrapper">
-                                    <img
-                                        className="IMG"
-                                        alt={item.name}
-                                        src={item.img}
-                                    />
-                                </div>
-                                {/* <img src={item.img} alt={item.name} /> */}
-                                <div className="RowContent">
+                            <div className="ImgWrapper">
+                                <img
+                                    className="IMG"
+                                    alt={item.name}
+                                    src={item.img}
+                                />
+                            </div>
+
+                            {/* <img src={item.img} alt={item.name} /> */}
+                            <div className="content">
+                                <div>
                                     <div className="h2">{item.name}</div>
                                     <p>{item.description}</p>
                                     <div>
@@ -29,14 +30,14 @@ function Projects(props) {
                                         ))}
                                     </div>
                                 </div>
-                            </div>
-                            <div className="ButtonWrapper">
-                                <a className="btn" href={item.preview}>
-                                    Visit Site
-                                </a>
-                                <a className="btn" href={item.github}>
-                                    View Code
-                                </a>
+                                <div className="ButtonWrapper">
+                                    <a className="btn" href={item.preview}>
+                                        Visit Site
+                                    </a>
+                                    <a className="btn" href={item.github}>
+                                        View Code
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     );
@@ -49,7 +50,6 @@ function Projects(props) {
 export default Projects;
 
 const Styles = styled.div`
-    font-family: 'Roboto', sans-serif;
     display: flex;
     box-sizing: border-box;
     justify-content: center;
@@ -63,21 +63,26 @@ const Styles = styled.div`
     clip-path: polygon(0% 30px, 100% 0, 100% 100%, 0% 100%);
     .ImgWrapper {
         box-sizing: border-box;
-        max-width: 400px;
+        max-width: 300px;
         width: 100%;
         display: flex;
         padding: 20px;
         justify-content: center;
         background-color: #fff;
         border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-        border-bottom: 2px solid #5e6572;
+        border-bottom-left-radius: 4px;
+        overflow: hidden;
+        /* border-bottom: 2px solid #5e6572; */
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
     }
     .IMG {
         /* height: auto; */
         width: auto;
     }
     .ButtonWrapper {
+        width: 100%;
         display: flex;
         align-self: flex-end;
     }
@@ -90,7 +95,7 @@ const Styles = styled.div`
     }
     .ProjectWrapper {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin: 0 auto;
         @media (max-width: 900px) {
             flex-direction: column;
@@ -98,12 +103,12 @@ const Styles = styled.div`
     }
     .Project {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: flex-start;
         justify-content: space-between;
         background-color: #eef1ef;
 
-        max-width: 400px;
+        max-width: 800px;
         width: 100%;
         /* padding: 5px; */
         margin: 5px;
@@ -111,11 +116,14 @@ const Styles = styled.div`
         box-shadow: 2px 2px 4px gray;
     }
 
-    .RowContent {
+    .content {
         box-sizing: border-box;
         display: flex;
+        max-width: 500px;
+        width: 100%;
         font-weight: 300;
         flex-direction: column;
+        justify-content: space-between;
         font-size: 1rem;
         padding: 10px;
         /* width: 100%;
@@ -123,8 +131,6 @@ const Styles = styled.div`
         height: 100%; */
         /* background-color: #eef1ef; */
         color: #5e6572;
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
         p {
             /* font-size: 1.8rem; */
             margin: 5px 0;
