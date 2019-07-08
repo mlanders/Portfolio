@@ -15,7 +15,7 @@ function About() {
             </div>
             <div>
                 <div className="Info">
-                    <div className="h2">ABOUT ME</div>
+                    <div className="h1">ABOUT ME</div>
                     <br />
                     <p>
                         Developer with a passion for education and crafting
@@ -30,7 +30,7 @@ function About() {
                     </p>{' '}
                 </div>
                 <div className="Skills">
-                    <div className="h2">LANGUAGES & TOOLS</div>
+                    <div className="h1">LANGUAGES & TOOLS</div>
                     <br />
                     <i className=" fab fa-html5" data-tip data-for="html" />
                     <i className="fab fa-css3-alt " data-tip data-for="css" />
@@ -136,7 +136,7 @@ const Styles = styled.div`
         font-weight: 300;
         p {
             margin-bottom: 15px;
-            font-size: 1.4rem;
+            /* font-size: 1.4rem; */
         }
     }
 

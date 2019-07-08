@@ -4,9 +4,9 @@ import styled from 'styled-components';
 function Top() {
     return (
         <Styles>
-            <div className="TopSection">
-                <div classnName="Name">Hi, I'm Mike</div>
-                <div className="SubTitle">Full Stack Web Developer</div>
+            <div className="topSection">
+                <div className="name">Hi, I'm Mike</div>
+                <div className="subTitle">Full Stack Web Developer</div>
             </div>
         </Styles>
     );
@@ -15,14 +15,13 @@ function Top() {
 export default Top;
 
 const Styles = styled.div`
-    font-family: 'Roboto', sans-serif;
     font-variant-caps: all-small-caps;
     font-weight: 400;
     box-sizing: border-box;
     background-color: #17354f;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 30px, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
-    .TopSection {
+    .topSection {
         box-sizing: border-box;
         max-width: 800px;
         width: 100%;
@@ -34,12 +33,12 @@ const Styles = styled.div`
         padding: 20px;
     }
 
-    .Name {
+    .name {
         font-size: 6rem;
         color: #eef1ef;
     }
 
-    .SubTitle {
+    .subTitle {
         font-weight: 300;
         font-size: 3rem;
         color: #7d98a1;
