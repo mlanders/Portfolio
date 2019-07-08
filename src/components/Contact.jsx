@@ -1,29 +1,68 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
+    const [state, setState] = useState({ name: '', email: '', message: '' });
+    const encode = data => {
+        return Object.keys(data)
+            .map(
+                key =>
+                    encodeURIComponent(key) +
+                    '=' +
+                    encodeURIComponent(data[key])
+            )
+            .join('&');
+    };
+
+    const handleSubmit = e => {
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: encode({ 'form-name': 'contact', ...state })
+        })
+            .then(() => alert('Success!'))
+            .catch(error => alert(error));
+
+        e.preventDefault();
+    };
+
+    const handleChange = e => setState({ [e.target.name]: e.target.value });
+
     return (
-        <form
-            name="contact"
-            method="POST"
-            netlify-honeypot="bot-field"
-            data-netlify="true"
-            action="/">
-            <p style={{ visibility: 'hidden' }}>
+        <form onSubmit={handleSubmit}>
+            <p>
                 <label>
-                    Don’t fill this out if you're human:{' '}
-                    <input name="bot-field" />
+                    Your Name:{' '}
+                    <input
+                        type="text"
+                        name="name"
+                        value={state.name}
+                        onChange={handleChange}
+                    />
                 </label>
             </p>
             <p>
-                <label>Email: </label>
-                <input type="email" name="email" required />
+                <label>
+                    Your Email:{' '}
+                    <input
+                        type="email"
+                        name="email"
+                        value={state.email}
+                        onChange={handleChange}
+                    />
+                </label>
             </p>
             <p>
-                <label>Message: </label>
-                <textarea name="message" required />
+                <label>
+                    Message:{' '}
+                    <textarea
+                        name="message"
+                        value={state.message}
+                        onChange={handleChange}
+                    />
+                </label>
             </p>
             <p>
-                <button type="submit">Submit</button>
+                <button type="submit">Send</button>
             </p>
         </form>
     );
