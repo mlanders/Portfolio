@@ -42,7 +42,8 @@ const projects = [
     {
         id: 3,
         name: 'Landers.dev',
-        description: 'Portfolio site for Michael Landers.',
+        description:
+            'Portfolio site for Mike Landers. Built using React and Styled Components. Hosted on Netlify.',
         img: `${landers}`,
         github: 'https://github.com/mlanders/Portfolio',
         preview: 'https://www.landers.dev/',
