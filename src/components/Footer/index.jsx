@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Contact from './Contact';
+import Contact from '../Contact/';
 
-function Bottom() {
+function Footer() {
     return (
         <BottomWrapper>
             <SectionTitle>
@@ -56,7 +56,7 @@ function Bottom() {
     );
 }
 
-export default Bottom;
+export default Footer;
 
 const BottomWrapper = styled.div`
     box-sizing: border-box;

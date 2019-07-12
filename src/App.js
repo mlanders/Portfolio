@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import Projects from './components/Projects';
+
+// Project data
 import db from './data.js';
-import Top from './components/Top';
-import Bottom from './components/Bottom';
-import About from './components/About';
+
+// Components
+import Projects from './components/Projects/';
+import Header from './components/Header/';
+import Footer from './components/Footer/';
+import About from './components/About/';
+
+// Styles
 import { GlobalStyles } from './styles';
 
 import ReactGA from 'react-ga';
@@ -21,10 +27,10 @@ function App() {
     return (
         <SiteWrapper>
             <GlobalStyles />
-            <Top />
+            <Header />
             <About />
             <Projects data={data} />
-            <Bottom />
+            <Footer />
         </SiteWrapper>
     );
 }

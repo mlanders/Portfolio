@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Top() {
+function Header() {
     return (
         <Styles>
             <div className="topSection">
@@ -12,7 +12,7 @@ function Top() {
     );
 }
 
-export default Top;
+export default Header;
 
 const Styles = styled.div`
     font-variant-caps: all-small-caps;

@@ -1,6 +1,7 @@
 import trainingBot from './img/trainingBot.webp';
 import luncher from './img/Luncher.webp';
 import lambdaNotes from './img/lambdaNotes.webp';
+import landers from './img/Landers.webp';
 
 const projects = [
     {
@@ -40,9 +41,23 @@ const projects = [
     },
     {
         id: 3,
+        name: 'Landers.dev',
+        description: 'Portfolio site for Michael Landers.',
+        img: `${landers}`,
+        github: 'https://github.com/mlanders/Portfolio',
+        preview: 'https://www.landers.dev/',
+        tags: [
+            'fab fa-html5',
+            'fab fa-css3-alt',
+            'fab fa-js-square',
+            'fab fa-react'
+        ]
+    },
+    {
+        id: 4,
         name: 'Luncher',
         description:
-            'Application that allows school administrators to request donations.',
+            'Early front end project built at Lambda School. Luncher is an application that allows school administrators to request donations.',
         img: `${luncher}`,
         github: 'https://github.com/luncher2-build-week-org-19/FE-Luncher2',
         preview: 'https://luncher2.netlify.com/',
@@ -54,35 +69,6 @@ const projects = [
             'fab fa-react'
         ]
     }
-    // {
-    // 	id: 1,
-    // 	name: "Todo App",
-    // 	description: "Todo app built using React JS and local storage.",
-    // 	img: `${project_1}`,
-    // 	github: "https://github.com/mlanders/React-Todo",
-    // 	preview: "https://todo.cranders.com/",
-    // 	tags: ["fa-html5", "fa-css3-alt", "fa-js-square", "fa-node-js"]
-    // },
-    // {
-    // 	id: 2,
-    // 	name: "Instagram Clone",
-    // 	description:
-    // 		"Simple Instagram clone app that has a working search. Liking and commenting on a post is functional. Login page is for demo purposes and not fully functional.",
-
-    // 	img: `${project_2}`,
-    // 	github: "https://github.com/mlanders/React-Insta-Clone",
-    // 	preview: "https://instagram.cranders.com/",
-    // 	tags: ["fa-html5", "fa-css3-alt", "fa-js-square", "fa-node-js"]
-    // },
-    // {
-    // 	id: 3,
-    // 	name: "React Wars",
-    // 	description: "",
-    // 	img: `${project_3}`,
-    // 	github: "https://github.com/mlanders/Sprint-Challenge-React-Wars",
-    // 	preview: "https://reactwars.cranders.com/",
-    // 	tags: ["fa-html5", "fa-css3-alt", "fa-js-square", "fa-node-js"]
-    // }
 ];
 /* 
 fab fa-react
