@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import PieChart from './PieChart';
+import { Doughnut } from 'react-chartjs-2';
 
 function Projects(props) {
     return (
@@ -25,10 +27,25 @@ function Projects(props) {
                                     <div className="h2">{item.name}</div>
                                     <p>{item.description}</p>
                                     <div>
-                                        {item.tags.map(tag => (
-                                            <i className={`${tag}`} />
+                                        {item.tags.map((tag, index) => (
+                                            <i
+                                                key={index}
+                                                className={`${tag}`}
+                                            />
                                         ))}
                                     </div>
+                                </div>
+                                <div className="doughtnut">
+                                    {/* <Doughnut
+                                        data={item.data}
+                                        options={item.options}
+                                    /> */}
+                                    {item.lighthouse.map(item => (
+                                        <PieChart
+                                            data={item.data}
+                                            title={item.title}
+                                        />
+                                    ))}
                                 </div>
                                 <div className="ButtonWrapper">
                                     <a className="btn" href={item.preview}>
@@ -145,5 +162,10 @@ const Styles = styled.div`
         i {
             padding: 5px;
         }
+    }
+    .doughtnut {
+        display: flex;
+        width: 150px;
+        /* height: 100px; */
     }
 `;
