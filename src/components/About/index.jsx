@@ -8,7 +8,7 @@ function About() {
         <Styles>
             <div>
                 <img
-                    className="Headshot"
+                    className="headshot"
                     alt="Michael Landers"
                     src={headshot}
                 />
@@ -124,7 +124,7 @@ const Styles = styled.div`
         height: 600px;
     }
 
-    .Headshot {
+    .headshot {
         border-radius: 4%;
         height: 150px;
         width: auto;

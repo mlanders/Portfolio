@@ -25,18 +25,14 @@ function App() {
     });
 
     return (
-        <SiteWrapper>
+        <>
             <GlobalStyles />
             <Header />
             <About />
             <Projects data={data} />
             <Footer />
-        </SiteWrapper>
+        </>
     );
 }
-
-const SiteWrapper = styled.div`
-    /* padding: 0 15px; */
-`;
 
 export default App;

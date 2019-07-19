@@ -4,8 +4,8 @@ import styled from 'styled-components';
 function Header() {
     return (
         <Styles>
-            <div className="topSection">
-                <div className="name">Hi, I'm Mike</div>
+            <div className="header">
+                <div className="title">Hi, I'm Mike</div>
                 <div className="subTitle">Full Stack Web Developer</div>
             </div>
         </Styles>
@@ -21,7 +21,7 @@ const Styles = styled.div`
     background-color: #17354f;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 30px, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
-    .topSection {
+    .header {
         box-sizing: border-box;
         max-width: 800px;
         width: 100%;
@@ -33,7 +33,7 @@ const Styles = styled.div`
         padding: 20px;
     }
 
-    .name {
+    .title {
         font-size: 6rem;
         color: #eef1ef;
     }
