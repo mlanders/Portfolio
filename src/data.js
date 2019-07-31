@@ -53,23 +53,23 @@ const projects = [
             'fab fa-js-square',
             'fab fa-react'
         ]
-    },
-    {
-        id: 4,
-        name: 'Luncher',
-        description:
-            'Early front end project built at Lambda School. Luncher is an application that allows school administrators to request donations.',
-        img: `${luncher}`,
-        github: 'https://github.com/luncher2-build-week-org-19/FE-Luncher2',
-        preview: 'https://luncher2.netlify.com/',
-        tags: [
-            'fab fa-html5',
-            'fab fa-css3-alt',
-            'fab fa-js-square',
-            'fab fa-node-js',
-            'fab fa-react'
-        ]
     }
+    // {
+    //     id: 4,
+    //     name: 'Luncher',
+    //     description:
+    //         'Early front end project built at Lambda School. Luncher is an application that allows school administrators to request donations.',
+    //     img: `${luncher}`,
+    //     github: 'https://github.com/luncher2-build-week-org-19/FE-Luncher2',
+    //     preview: 'https://luncher2.netlify.com/',
+    //     tags: [
+    //         'fab fa-html5',
+    //         'fab fa-css3-alt',
+    //         'fab fa-js-square',
+    //         'fab fa-node-js',
+    //         'fab fa-react'
+    //     ]
+    // }
 ];
 /* 
 fab fa-react

@@ -43,6 +43,52 @@ function Projects(props) {
                     );
                 })}
             </div>
+            <div className="SectionTitle SectionTitle2">
+                <div className="h1">SMALL PROJECTS</div>
+                <div className="projectSmallWrapper">
+                    <div className="Project projectSmall">
+                        <div className="content">
+                            <div>
+                                <div className="h2">Num to String</div>
+                                <p>Type in a number and get a string back.</p>
+                            </div>
+                            <div className="ButtonWrapper">
+                                <a
+                                    className="btn"
+                                    href="https://num.landers.dev">
+                                    Visit Site
+                                </a>
+                                <a
+                                    className="btn"
+                                    href="https://github.com/mlanders/num_to_string">
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="Project projectSmall">
+                        <div className="content">
+                            <div>
+                                <div className="h2">React ToDo</div>
+                                <p>Simple Todo app using local storage.</p>
+                            </div>
+                            <div className="ButtonWrapper">
+                                <a
+                                    className="btn"
+                                    href="https://todo.landers.dev/">
+                                    Visit Site
+                                </a>
+                                <a
+                                    className="btn"
+                                    href="https://github.com/mlanders/React-Todo">
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="ProjectWrapper" />
         </Styles>
     );
 }
@@ -96,6 +142,14 @@ const Styles = styled.div`
         /* font-size: 2rem; */
         font-weight: 300;
     }
+    .SectionTitle2 {
+        margin-top: 20px;
+    }
+    .projectSmallWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .ProjectWrapper {
         display: flex;
         flex-direction: column;
@@ -118,6 +172,10 @@ const Styles = styled.div`
         margin: 5px;
         border-radius: 4px;
         box-shadow: 2px 2px 4px gray;
+    }
+    .projectSmall {
+        height: 100px;
+        width: 390px;
     }
 
     .content {
