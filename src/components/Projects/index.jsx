@@ -25,8 +25,11 @@ function Projects(props) {
                                     <div className="h2">{item.name}</div>
                                     <p>{item.description}</p>
                                     <div>
-                                        {item.tags.map(tag => (
-                                            <i className={`${tag}`} />
+                                        {item.tags.map((tag, index) => (
+                                            <i
+                                                className={`${tag}`}
+                                                key={index}
+                                            />
                                         ))}
                                     </div>
                                 </div>

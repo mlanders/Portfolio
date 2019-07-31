@@ -1,5 +1,5 @@
 import trainingBot from './img/trainingBot.webp';
-import luncher from './img/Luncher.webp';
+// import luncher from './img/Luncher.webp';
 import lambdaNotes from './img/lambdaNotes.webp';
 import landers from './img/Landers.webp';
 
