@@ -6,14 +6,14 @@ import headshot from '../../img/headshot.webp';
 function About() {
     return (
         <Styles>
-            <div>
+            <div className="left">
                 <img
                     className="headshot"
                     alt="Michael Landers"
                     src={headshot}
                 />
             </div>
-            <div>
+            <div className="right">
                 <div className="Info">
                     <div className="h1">ABOUT ME</div>
                     <br />
@@ -111,7 +111,7 @@ const Styles = styled.div`
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     display: flex;
-    height: 400px;
+    /* height: 400px; */
     align-items: center;
     display: flex;
     color: #3e434c;
@@ -121,7 +121,10 @@ const Styles = styled.div`
     margin: 0 auto;
     align-items: center;
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-        height: 600px;
+        height: auto;
+    }
+    @media only screen and (max-width: 800px) {
+        flex-direction: column;
     }
 
     .headshot {

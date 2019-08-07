@@ -18,6 +18,8 @@ const Styles = styled.div`
     font-variant-caps: all-small-caps;
     font-weight: 400;
     box-sizing: border-box;
+    display:flex;
+    justify-content:center;
     background-color: #17354f;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 30px, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);

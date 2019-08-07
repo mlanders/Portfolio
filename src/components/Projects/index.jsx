@@ -55,7 +55,7 @@ function Projects(props) {
                                 <div className="h2">Num to String</div>
                                 <p>Type in a number and get a string back.</p>
                             </div>
-                            <div className="ButtonWrapper">
+                            <div className="ButtonWrapper ButtonWrapperSmall">
                                 <a
                                     className="btn"
                                     href="https://num.landers.dev">
@@ -75,7 +75,7 @@ function Projects(props) {
                                 <div className="h2">React ToDo</div>
                                 <p>Simple Todo app using local storage.</p>
                             </div>
-                            <div className="ButtonWrapper">
+                            <div className="ButtonWrapper ButtonWrapperSmall">
                                 <a
                                     className="btn"
                                     href="https://todo.landers.dev/">
@@ -123,7 +123,7 @@ const Styles = styled.div`
         border-bottom-left-radius: 4px;
         overflow: hidden;
         /* border-bottom: 2px solid #5e6572; */
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 768) {
             display: none;
         }
     }
@@ -137,6 +137,11 @@ const Styles = styled.div`
         width: 100%;
         display: flex;
         align-self: flex-end;
+    }
+    .ButtonWrapperSmall {
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+        }
     }
     .SectionTitle {
         max-width: 800px;
@@ -163,21 +168,16 @@ const Styles = styled.div`
     }
     .Project {
         display: flex;
-        /* flex-direction: column; */
         align-items: flex-start;
         justify-content: space-between;
         background-color: #eef1ef;
-
         max-width: 800px;
         width: 100%;
-        height: 300px;
-        /* padding: 5px; */
         margin: 5px;
         border-radius: 4px;
         box-shadow: 2px 2px 4px gray;
     }
     .projectSmall {
-        height: 100px;
         width: 390px;
     }
 
