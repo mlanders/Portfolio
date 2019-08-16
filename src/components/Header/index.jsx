@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import fadeIn from 'react-animations/lib/fade-in';
 
 function Header() {
     return (
@@ -13,6 +14,7 @@ function Header() {
 }
 
 export default Header;
+const fadeInAnimation = keyframes`${fadeIn}`;
 
 const Styles = styled.div`
     font-variant-caps: all-small-caps;
@@ -38,11 +40,13 @@ const Styles = styled.div`
     .title {
         font-size: 6rem;
         color: #eef1ef;
+        animation: 1s ${fadeInAnimation};
     }
 
     .subTitle {
         font-weight: 400;
         font-size: 3rem;
         color: #7d98a1;
+        animation: 2s ${fadeInAnimation};
     }
 `;

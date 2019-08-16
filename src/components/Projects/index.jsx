@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-
+import styled, { keyframes } from 'styled-components';
+import fadeIn from 'react-animations/lib/fade-in';
 function Projects(props) {
     return (
         <Styles>
@@ -97,7 +97,7 @@ function Projects(props) {
 }
 
 export default Projects;
-
+const fadeInAnimation = keyframes`${fadeIn}`;
 const Styles = styled.div`
     display: flex;
     box-sizing: border-box;
@@ -179,6 +179,7 @@ const Styles = styled.div`
         width: 100%;
         margin: 5px 0 30px;
         border-radius: 4px;
+        animation: 2s ${fadeInAnimation};
         /* box-shadow: 2px 2px 4px gray; */
     }
     .projectSmall {

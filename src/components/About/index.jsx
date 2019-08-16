@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import fadeIn from 'react-animations/lib/fade-in';
 import ReactTooltip from 'react-tooltip';
 import headshot from '../../img/headshot.png';
 
@@ -107,6 +108,9 @@ function About() {
 }
 
 export default About;
+
+const fadeInAnimation = keyframes`${fadeIn}`;
+
 const Styles = styled.div`
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
@@ -120,6 +124,8 @@ const Styles = styled.div`
     padding: 20px;
     margin: 0 auto;
     align-items: center;
+    animation: 2s ${fadeInAnimation};
+
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
         height: auto;
     }
