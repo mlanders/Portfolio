@@ -133,10 +133,14 @@ const Styles = styled.div`
         /* height: 300px;
         width: 300px; */
     }
+    i {
+        margin-top: 15px;
+    }
     .ButtonWrapper {
         width: 100%;
         display: flex;
         align-self: flex-end;
+        margin-top: 15px;
     }
     .ButtonWrapperSmall {
         @media only screen and (max-width: 768px) {
@@ -148,7 +152,7 @@ const Styles = styled.div`
         width: 100%;
         margin: 0 auto;
         /* font-size: 2rem; */
-        font-weight: 300;
+        font-weight: 400;
     }
     .SectionTitle2 {
         margin-top: 20px;
@@ -173,9 +177,9 @@ const Styles = styled.div`
         background-color: #eef1ef;
         max-width: 800px;
         width: 100%;
-        margin: 5px;
+        margin: 5px 0 30px;
         border-radius: 4px;
-        box-shadow: 2px 2px 4px gray;
+        /* box-shadow: 2px 2px 4px gray; */
     }
     .projectSmall {
         width: 390px;
@@ -186,7 +190,7 @@ const Styles = styled.div`
         display: flex;
         max-width: 500px;
         width: 100%;
-        font-weight: 300;
+        font-weight: 400;
         flex-direction: column;
         justify-content: space-between;
         font-size: 1rem;
@@ -195,7 +199,7 @@ const Styles = styled.div`
         max-height: 400px;
         height: 100%; */
         /* background-color: #eef1ef; */
-        color: #5e6572;
+        color: #333;
         p {
             /* font-size: 1.8rem; */
             margin: 5px 0;

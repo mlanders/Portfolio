@@ -114,7 +114,7 @@ const Styles = styled.div`
     /* height: 400px; */
     align-items: center;
     display: flex;
-    color: #3e434c;
+    color: #333;
     max-width: 800px;
     width: 100%;
     padding: 20px;
@@ -136,7 +136,7 @@ const Styles = styled.div`
 
     .Info {
         font-size: 1.8rem;
-        font-weight: 300;
+        font-weight: 400;
         p {
             margin-bottom: 15px;
             /* font-size: 1.4rem; */
@@ -145,7 +145,7 @@ const Styles = styled.div`
 
     .Skills {
         font-size: 2.3rem;
-        font-weight: 300;
+        font-weight: 400;
         margin-top: 50px;
     }
 `;

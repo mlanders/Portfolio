@@ -8,6 +8,7 @@ export const Global = css`
     }
     html {
         font-size: 62.5%;
+        line-height: 1.45;
     }
     .body {
         background-color: #e8e9eb;

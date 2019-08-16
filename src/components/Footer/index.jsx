@@ -61,7 +61,7 @@ export default Footer;
 const BottomWrapper = styled.div`
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     width: 100%;
     padding: 20px;
     background-color: #f1f1f1;
@@ -87,7 +87,7 @@ const SectionTitle = styled.div`
     width: 100%;
     margin: 0 auto 20px;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 400;
 `;
 const ContactInfo = styled.div`
     display: flex;

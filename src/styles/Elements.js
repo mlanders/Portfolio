@@ -13,7 +13,7 @@ export const Elements = css`
         background-color: #1356aa;
         box-shadow: 1px 1px 4px gray;
         color: #fff;
-        margin: 5px;
+        margin: 5px 5px 5px 0;
         &:hover {
             text-decoration: none;
             border-radius: 4px;

@@ -41,7 +41,7 @@ const Styles = styled.div`
     }
 
     .subTitle {
-        font-weight: 300;
+        font-weight: 400;
         font-size: 3rem;
         color: #7d98a1;
     }
