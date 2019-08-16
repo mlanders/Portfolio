@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import fadeIn from 'react-animations/lib/fade-in';
+import Fade from 'react-reveal/Fade';
 function Projects(props) {
     return (
         <Styles>
@@ -10,39 +11,41 @@ function Projects(props) {
             <div className="ProjectWrapper">
                 {props.data.map(item => {
                     return (
-                        <div className="Project" key={item.id}>
-                            <div className="ImgWrapper">
-                                <img
-                                    className="IMG"
-                                    alt={item.name}
-                                    src={item.img}
-                                />
-                            </div>
+                        <Fade>
+                            <div className="Project" key={item.id}>
+                                <div className="ImgWrapper">
+                                    <img
+                                        className="IMG"
+                                        alt={item.name}
+                                        src={item.img}
+                                    />
+                                </div>
 
-                            {/* <img src={item.img} alt={item.name} /> */}
-                            <div className="content">
-                                <div>
-                                    <div className="h2">{item.name}</div>
-                                    <p>{item.description}</p>
+                                {/* <img src={item.img} alt={item.name} /> */}
+                                <div className="content">
                                     <div>
-                                        {item.tags.map((tag, index) => (
-                                            <i
-                                                className={`${tag}`}
-                                                key={index}
-                                            />
-                                        ))}
+                                        <div className="h2">{item.name}</div>
+                                        <p>{item.description}</p>
+                                        <div>
+                                            {item.tags.map((tag, index) => (
+                                                <i
+                                                    className={`${tag}`}
+                                                    key={index}
+                                                />
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div className="ButtonWrapper">
+                                        <a className="btn" href={item.preview}>
+                                            Visit Site
+                                        </a>
+                                        <a className="btn" href={item.github}>
+                                            View Code
+                                        </a>
                                     </div>
                                 </div>
-                                <div className="ButtonWrapper">
-                                    <a className="btn" href={item.preview}>
-                                        Visit Site
-                                    </a>
-                                    <a className="btn" href={item.github}>
-                                        View Code
-                                    </a>
-                                </div>
                             </div>
-                        </div>
+                        </Fade>
                     );
                 })}
             </div>
@@ -69,26 +72,28 @@ function Projects(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="Project projectSmall">
-                        <div className="content">
-                            <div>
-                                <div className="h2">React ToDo</div>
-                                <p>Simple Todo app using local storage.</p>
-                            </div>
-                            <div className="ButtonWrapper ButtonWrapperSmall">
-                                <a
-                                    className="btn"
-                                    href="https://todo.landers.dev/">
-                                    Visit Site
-                                </a>
-                                <a
-                                    className="btn"
-                                    href="https://github.com/mlanders/React-Todo">
-                                    View Code
-                                </a>
+                    <Fade>
+                        <div className="Project projectSmall">
+                            <div className="content">
+                                <div>
+                                    <div className="h2">React ToDo</div>
+                                    <p>Simple Todo app using local storage.</p>
+                                </div>
+                                <div className="ButtonWrapper ButtonWrapperSmall">
+                                    <a
+                                        className="btn"
+                                        href="https://todo.landers.dev/">
+                                        Visit Site
+                                    </a>
+                                    <a
+                                        className="btn"
+                                        href="https://github.com/mlanders/React-Todo">
+                                        View Code
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </Fade>
                 </div>
             </div>
             <div className="ProjectWrapper" />
