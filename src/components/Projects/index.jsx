@@ -52,26 +52,28 @@ function Projects(props) {
             <div className="SectionTitle SectionTitle2">
                 <div className="h1">SMALL PROJECTS</div>
                 <div className="projectSmallWrapper">
-                    <div className="Project projectSmall">
-                        <div className="content">
-                            <div>
-                                <div className="h2">Num to String</div>
-                                <p>Type in a number and get a string back.</p>
-                            </div>
-                            <div className="ButtonWrapper ButtonWrapperSmall">
-                                <a
-                                    className="btn"
-                                    href="https://num.landers.dev">
-                                    Visit Site
+                    <Fade>
+                        <div className="Project projectSmall">
+                            <div className="content">
+                                <div>
+                                    <div className="h2">Num to String</div>
+                                    <p>Type in a number and get a string back.</p>
+                                </div>
+                                <div className="ButtonWrapper ButtonWrapperSmall">
+                                    <a
+                                        className="btn"
+                                        href="https://num.landers.dev">
+                                        Visit Site
                                 </a>
-                                <a
-                                    className="btn"
-                                    href="https://github.com/mlanders/num_to_string">
-                                    View Code
+                                    <a
+                                        className="btn"
+                                        href="https://github.com/mlanders/num_to_string">
+                                        View Code
                                 </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </Fade>
                     <Fade>
                         <div className="Project projectSmall">
                             <div className="content">
@@ -89,6 +91,23 @@ function Projects(props) {
                                         className="btn"
                                         href="https://github.com/mlanders/React-Todo">
                                         View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </Fade>
+                    <Fade>
+                        <div className="Project projectSmall">
+                            <div className="content">
+                                <div>
+                                    <div className="h2">Media Site</div>
+                                    <p>View movies and TV shows from The Movie Database API.</p>
+                                </div>
+                                <div className="ButtonWrapper ButtonWrapperSmall">
+                                    <a
+                                        className="btn"
+                                        href="https://media.landers.dev/">
+                                        Visit Site
                                     </a>
                                 </div>
                             </div>
@@ -165,6 +184,7 @@ const Styles = styled.div`
     .projectSmallWrapper {
         display: flex;
         flex-direction: row;
+        flex-wrap:wrap;
         justify-content: space-between;
     }
     .ProjectWrapper {
