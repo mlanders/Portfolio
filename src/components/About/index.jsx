@@ -27,7 +27,7 @@ function About() {
 				<div className="Skills">
 					<div className="h1">LANGUAGES & TOOLS</div>
 					<br />
-					<i className=" fab fa-html5" data-tip data-for="html" />
+					<i className="fab fa-html5" data-tip data-for="html" />
 					<i className="fab fa-css3-alt " data-tip data-for="css" />
 					<i className="fab fa-js-square " data-tip data-for="js" />
 					<i className="fab fa-react " data-tip data-for="react" />

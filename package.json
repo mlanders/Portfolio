@@ -6,6 +6,9 @@
     "keywords": [],
     "main": "src/index.js",
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.27",
+        "@fortawesome/free-solid-svg-icons": "^5.12.1",
+        "@fortawesome/react-fontawesome": "^0.1.8",
         "dotenv": "^6.2.0",
         "eslint-plugin-react-hooks": "^1.2.0",
         "node-emoji": "^1.10.0",
