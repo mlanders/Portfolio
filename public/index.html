@@ -1,116 +1,51 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="Description" content="Portfolio for Michael Landers" />
-        <meta
-            name="google-site-verification"
-            content="otHIAgwCHzl5GMznnNmlXmpjLHzKf0akfWW9AbvW4RM"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#17354f" />
-        <meta name="msapplication-TileColor" content="#17354f" />
-        <meta name="theme-color" content="#17354f" />
-        <title>Mike Landers</title>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		<meta name="Description" content="Portfolio for Michael Landers" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#17354f" />
+		<meta name="msapplication-TileColor" content="#17354f" />
+		<meta name="theme-color" content="#17354f" />
+		<title>Mike Landers</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+			integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+			crossorigin="anonymous"
+		/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+			crossorigin="anonymous"
+		/>
 
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-            integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-            crossorigin="anonymous"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-            crossorigin="anonymous"
-        />
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+		<style>
+			html {
+				font-size: 62.5%;
+			}
+		</style>
+	</head>
 
-        <script
-            src="https://unpkg.com/react@16/umd/react.development.js"
-            crossorigin
-        ></script>
-        <script
-            src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-            crossorigin
-        ></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-1771173-5"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-
-            gtag('config', 'UA-1771173-5');
-        </script>
-        <style>
-            html {
-                font-size: 62.5%;
-            }
-        </style>
-    </head>
-
-    <body>
-        <noscript>
-            You need to enable JavaScript to run this app.
-        </noscript>
-        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-            <input type="text" name="name" />
-            <input type="email" name="email" />
-            <textarea name="message"></textarea>
-        </form>
-        <div id="root"></div>
-        <script>
-            !(function(g, s, q, r, d) {
-                r = g[r] =
-                    g[r] ||
-                    function() {
-                        (r.q = r.q || []).push(arguments);
-                    };
-                d = s.createElement(q);
-                q = s.getElementsByTagName(q)[0];
-                d.src = '//d1l6p2sc9645hc.cloudfront.net/tracker.js';
-                q.parentNode.insertBefore(d, q);
-            })(window, document, 'script', '_gs');
-
-            _gs('set', 'anonymizeIP', true);
-            _gs('GSN-799529-O');
-        </script>
-    </body>
+	<body>
+		<noscript>
+			You need to enable JavaScript to run this app.
+		</noscript>
+		<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+			<input type="text" name="name" />
+			<input type="email" name="email" />
+			<textarea name="message"></textarea>
+		</form>
+		<div id="root"></div>
+	</body>
 </html>
