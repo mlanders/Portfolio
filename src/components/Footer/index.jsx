@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Contact from "../Contact/";
+// import Contact from "../Contact/";
 
 function Footer() {
 	return (
@@ -58,12 +58,9 @@ const BottomWrapper = styled.div`
 const BottomSection = styled.section`
 	box-sizing: border-box;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	max-width: 800px;
 	width: 100%;
 	@media (max-width: 600px) {
