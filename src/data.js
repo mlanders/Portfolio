@@ -28,7 +28,7 @@ const projects = [
 			"Built in 48hrs with 3 other developers for a hackathon. Lambda Notes is an application that allows Lambda School students to take notes as they go through the cirriculum",
 		img: `${lambdaNotes}`,
 		github: "https://github.com/orgs/lambda-notes/dashboard",
-		preview: "https://lambda-notes-hackathon.netlify.com",
+		preview: null,
 		tags: [
 			"fab fa-html5",
 			"fab fa-css3-alt",

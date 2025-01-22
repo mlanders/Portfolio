@@ -63,3 +63,8 @@ now
 ```
 
 For more information on deploying a CRA generated React project on Now, [read our Guide](https://zeit.co/guides/deploying-react-with-now-cra).
+
+## Technologies Used
+
+- React.js
+- Tailwind CSS
