@@ -2,33 +2,34 @@ import headshot from "../img/headshot.jpg";
 
 const About = () => {
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-gray-100 py-8 px-4 animate-fadeIn">
+    <section className="bg-gradient-to-b from-white to-dark-50 py-16 px-4 animate-fadeIn">
       <div className="mx-auto" style={{ width: "800px" }}>
-        <div className="bg-white rounded-xl shadow-lg p-6">
-          <div className="grid md:grid-cols-3 gap-6 items-start">
+        <div className="bg-white rounded-2xl shadow-soft hover:shadow-xl transition-all duration-300 p-8 border border-dark-100">
+          <div className="grid md:grid-cols-3 gap-8 items-start">
             {/* Profile Section */}
             <div className="md:col-span-1">
-              <div className="relative">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary-500 to-primary-600 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
                 <img
                   src={headshot}
                   alt="Professional headshot"
-                  className="w-full rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                  className="relative w-full rounded-xl shadow-lg ring-2 ring-white"
                 />
               </div>
             </div>
 
             {/* Content Section */}
             <div className="md:col-span-2">
-              <h1 className="text-6xl font-bold text-gray-900 mb-6">
+              <h1 className="text-6xl font-bold bg-gradient-to-r from-dark-900 to-dark-700 bg-clip-text text-transparent mb-6">
                 About Me
               </h1>
               <div className="max-w-none">
-                <p className="text-2xl text-gray-700 mb-4 leading-relaxed">
+                <p className="text-2xl text-dark-700 mb-4 leading-relaxed">
                   Developer with a passion for education and crafting friendly
                   interfaces. My specialties are Javascript, React, Redux, and
                   Express.
                 </p>
-                <p className="text-2xl text-gray-700 mb-6 leading-relaxed">
+                <p className="text-2xl text-dark-700 mb-6 leading-relaxed">
                   After ten years in the customer support industry, I've
                   developed strong problem-solving and communication skills. I
                   look forward to combining those skills to help build visually
@@ -37,9 +38,10 @@ const About = () => {
               </div>
 
               {/* Skills Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-                <div className="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow duration-300">
-                  <h2 className="text-4xl font-semibold text-gray-900 mb-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div className="bg-gradient-to-br from-primary-50 to-white p-6 rounded-xl border border-primary-100 hover:shadow-soft hover:scale-105 transition-all duration-300">
+                  <h2 className="text-4xl font-semibold text-dark-900 mb-4 flex items-center">
+                    <span className="w-2 h-8 bg-gradient-to-b from-primary-500 to-primary-600 rounded-full mr-3"></span>
                     Front-end
                   </h2>
                   <ul className="space-y-3">
@@ -47,10 +49,10 @@ const About = () => {
                       (skill) => (
                         <li
                           key={skill}
-                          className="flex items-center text-2xl text-gray-700"
+                          className="flex items-center text-2xl text-dark-700 group"
                         >
                           <svg
-                            className="w-7 h-7 mr-3 text-blue-500"
+                            className="w-7 h-7 mr-3 text-primary-500 group-hover:scale-110 transition-transform"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                           >
@@ -67,8 +69,9 @@ const About = () => {
                   </ul>
                 </div>
 
-                <div className="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow duration-300">
-                  <h2 className="text-4xl font-semibold text-gray-900 mb-4">
+                <div className="bg-gradient-to-br from-dark-50 to-white p-6 rounded-xl border border-dark-200 hover:shadow-soft hover:scale-105 transition-all duration-300">
+                  <h2 className="text-4xl font-semibold text-dark-900 mb-4 flex items-center">
+                    <span className="w-2 h-8 bg-gradient-to-b from-dark-600 to-dark-800 rounded-full mr-3"></span>
                     Back-end
                   </h2>
                   <ul className="space-y-3">
@@ -80,10 +83,10 @@ const About = () => {
                     ].map((skill) => (
                       <li
                         key={skill}
-                        className="flex items-center text-2xl text-gray-700"
+                        className="flex items-center text-2xl text-dark-700 group"
                       >
                         <svg
-                          className="w-7 h-7 mr-3 text-blue-500"
+                          className="w-7 h-7 mr-3 text-dark-600 group-hover:scale-110 transition-transform"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
