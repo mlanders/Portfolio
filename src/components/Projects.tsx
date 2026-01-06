@@ -9,6 +9,12 @@ interface ProjectsProps {
 function Projects({ data }: ProjectsProps) {
   const smallProjects: SmallProject[] = [
     {
+      name: "Drink Tracker",
+      description: "Track your alcohol consumption and celebrate sober days.",
+      siteUrl: "https://drinks.landers.dev/",
+      githubUrl: null,
+    },
+    {
       name: "Num to String",
       description: "Type in a number and get a string back.",
       siteUrl: "https://num.landers.dev",
