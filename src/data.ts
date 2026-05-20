@@ -1,5 +1,5 @@
 import pack118 from "./img/pack118.png";
-import landers from "./img/Landers.jpg";
+import landers from "./img/Landers.png";
 import drinkTracker from "./img/DrinkTracker.png";
 import { Project } from "./types";
 

@@ -6,62 +6,74 @@ interface ProjectsProps {
   data: Project[];
 }
 
+const smallProjects: SmallProject[] = [
+  {
+    name: "Drink Tracker",
+    description: "Track your alcohol consumption and celebrate sober days.",
+    siteUrl: "https://drinks.landers.dev/",
+    githubUrl: null,
+  },
+  {
+    name: "Num to String",
+    description: "Type in a number and get a readable string back.",
+    siteUrl: "https://num.landers.dev",
+    githubUrl: "https://github.com/mlanders/num_to_string",
+  },
+  {
+    name: "React ToDo",
+    description: "Simple Todo app with local storage persistence.",
+    siteUrl: "https://todo.landers.dev/",
+    githubUrl: "https://github.com/mlanders/React-Todo",
+  },
+  {
+    name: "Media Site",
+    description: "Browse movies and TV shows via The Movie Database API.",
+    siteUrl: "https://media.landers.dev/",
+    githubUrl: null,
+  },
+];
+
 function Projects({ data }: ProjectsProps) {
-  const smallProjects: SmallProject[] = [
-    {
-      name: "Drink Tracker",
-      description: "Track your alcohol consumption and celebrate sober days.",
-      siteUrl: "https://drinks.landers.dev/",
-      githubUrl: null,
-    },
-    {
-      name: "Num to String",
-      description: "Type in a number and get a string back.",
-      siteUrl: "https://num.landers.dev",
-      githubUrl: "https://github.com/mlanders/num_to_string",
-    },
-    {
-      name: "React ToDo",
-      description: "Simple Todo app using local storage.",
-      siteUrl: "https://todo.landers.dev/",
-      githubUrl: "https://github.com/mlanders/React-Todo",
-    },
-    {
-      name: "Media Site",
-      description: "View movies and TV shows from The Movie Database API.",
-      siteUrl: "https://media.landers.dev/",
-      githubUrl: null,
-    },
-  ];
-
   return (
-    <div className="flex box-border justify-center flex-col flex-wrap w-full mx-auto py-16 px-4 bg-gradient-to-b from-dark-50 to-dark-100">
-      <div className="max-w-[800px] w-full mx-auto font-normal">
-        <h1 className="text-6xl font-bold bg-gradient-to-r from-dark-900 to-dark-700 bg-clip-text text-transparent mb-8">
-          Projects
-        </h1>
-      </div>
-      <div className="flex flex-col mx-auto gap-6">
-        {data.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div>
+    <div id="projects" className="bg-base-900 py-24 px-8 border-t border-base-700">
+      <div className="max-w-4xl mx-auto space-y-20">
 
-      <div className="max-w-[800px] w-full mx-auto mt-12 font-normal">
-        <h1 className="text-6xl font-bold bg-gradient-to-r from-dark-900 to-dark-700 bg-clip-text text-transparent mb-8">
-          Small Projects
-        </h1>
-        <div className="flex flex-row flex-wrap justify-between gap-4">
-          {smallProjects.map((project, index) => (
-            <SmallProjectCard
-              key={index}
-              name={project.name}
-              description={project.description}
-              siteUrl={project.siteUrl}
-              githubUrl={project.githubUrl}
-            />
-          ))}
+        {/* Featured projects */}
+        <div>
+          <div className="font-mono text-primary-400 text-sm tracking-widest mb-4">
+            02 // featured
+          </div>
+          <h2 className="text-5xl font-black text-white mb-12">Projects</h2>
+          <div className="space-y-8">
+            {data.map((project, i) => (
+              <ProjectCard key={project.id} project={project} index={i} />
+            ))}
+          </div>
         </div>
+
+        {/* Divider */}
+        <div className="h-px bg-gradient-to-r from-transparent via-base-600 to-transparent" />
+
+        {/* Small projects */}
+        <div>
+          <div className="font-mono text-primary-400 text-sm tracking-widest mb-4">
+            03 // more work
+          </div>
+          <h2 className="text-5xl font-black text-white mb-12">Small Projects</h2>
+          <div className="grid sm:grid-cols-2 gap-5">
+            {smallProjects.map((project, i) => (
+              <SmallProjectCard
+                key={i}
+                index={i}
+                name={project.name}
+                description={project.description}
+                siteUrl={project.siteUrl}
+                githubUrl={project.githubUrl}
+              />
+            ))}
+          </div>
+        </div>
+
       </div>
     </div>
   );

@@ -1,70 +1,44 @@
 <!DOCTYPE html>
-
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-		<meta name="Description" content="Portfolio | Michael Landers" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="manifest" href="/site.webmanifest" />
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#17354f" />
-		<meta name="msapplication-TileColor" content="#17354f" />
-		<meta name="theme-color" content="#17354f" />
-		<title>Mike Landers</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-			integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-			crossorigin="anonymous"
-		/>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" />
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-			crossorigin="anonymous"
-		/>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <meta name="description" content="Portfolio | Mike Landers — Full Stack Web Developer" />
 
-		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-		<style>
-			html {
-				font-size: 62.5%;
-			}
-		</style>
-		<script>
-			!function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(arguments)};
-				d=s.createElement(q);d.src='//d1l6p2sc9645hc.cloudfront.net/gosquared.js';q=
-						s.getElementsByTagName(q)[0];q.parentNode.insertBefore(d,q)}(window,document
-					,'script','_gs');
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#10b981" />
+    <meta name="msapplication-TileColor" content="#05080f" />
+    <meta name="theme-color" content="#05080f" />
 
-			_gs('GSN-799529-O');
-			_gs('set', 'anonymizeIP', true);
-		</script>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SBE2FBNK2"></script>
-	</head>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+    <title>Mike Landers — Full Stack Developer</title>
 
-			gtag('config', 'G-9SBE2FBNK2');
-		</script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-	<body>
-		<noscript>
-			You need to enable JavaScript to run this app.
-		</noscript>
-		<form name="contact" netlify netlify-honeypot="bot-field" hidden>
-			<input type="text" name="name" />
-			<input type="email" name="email" />
-			<textarea name="message"></textarea>
-		</form>
-		<div id="root"></div>
-	</body>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SBE2FBNK2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9SBE2FBNK2');
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+    <div id="root"></div>
+  </body>
 </html>

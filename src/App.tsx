@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 
-// Project data
 import db from "./data";
 import { Project } from "./types";
 
-// Components
 import Projects from "./components/Projects";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -18,7 +16,7 @@ function App() {
   });
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-base-900 text-base-50 font-sans">
       <Header />
       <About />
       <Projects data={data} />

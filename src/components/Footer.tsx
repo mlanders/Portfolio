@@ -1,112 +1,70 @@
+const socials = [
+  { label: "GitHub",   href: "https://github.com/mlanders",         icon: "fab fa-github" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/mikelanders/", icon: "fab fa-linkedin" },
+  { label: "Twitter",  href: "https://twitter.com/MikeLanders",      icon: "fab fa-twitter" },
+  { label: "DEV",      href: "https://dev.to/mlanders",              icon: "fab fa-dev" },
+];
+
 function Footer() {
   return (
-    <div className="box-border font-roboto font-normal w-full p-12 bg-gradient-to-b from-dark-100 to-dark-200 border-t border-dark-300">
-      <div className="max-w-[800px] w-full mx-auto mb-8">
-        <h1 className="text-6xl font-bold bg-gradient-to-r from-dark-900 to-dark-700 bg-clip-text text-transparent">
-          Contact
-        </h1>
-      </div>
-      <section className="box-border flex items-start mx-auto justify-between max-w-[800px] w-full md:flex-row flex-col">
-        <div className="w-full">
-          <div className="flex flex-col text-2xl space-y-4 text-dark-700 mb-8">
-            <span className="flex items-center group">
-              <svg
-                className="w-6 h-6 mr-3 text-primary-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-              </svg>
-              <span className="font-semibold text-dark-900">Location:</span>
-              <span className="ml-2">Elk Grove, CA</span>
-            </span>
-            <span className="flex items-center group">
-              <svg
-                className="w-6 h-6 mr-3 text-primary-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
-              <span className="font-semibold text-dark-900">Email:</span>
-              <a
-                href="mailto:landers.mike@gmail.com"
-                target="_top"
-                className="ml-2 hover:text-primary-600 transition-colors underline-offset-4 hover:underline"
-              >
-                landers.mike@gmail.com
-              </a>
-            </span>
-            <span className="flex items-center group">
-              <svg
-                className="w-6 h-6 mr-3 text-primary-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                />
-              </svg>
-              <span className="font-semibold text-dark-900">Phone:</span>
-              <span className="ml-2">916.541.7604</span>
-            </span>
-          </div>
-          <div className="self-center mt-10 flex gap-5">
-            <a
-              aria-label="LinkedIn"
-              href="https://linkedin.com/in/mikelanders/"
-              className="text-5xl no-underline text-dark-600 hover:text-primary-600 transition-all hover:scale-110 duration-300"
-            >
-              <div className="fab fa-linkedin" />
-            </a>
-            <a
-              aria-label="GitHub"
-              href="https://github.com/mlanders"
-              className="text-5xl no-underline text-dark-600 hover:text-primary-600 transition-all hover:scale-110 duration-300"
-            >
-              <div className="fab fa-github-square" />
-            </a>
-            <a
-              aria-label="Twitter"
-              href="https://twitter.com/MikeLanders"
-              className="text-5xl no-underline text-dark-600 hover:text-primary-600 transition-all hover:scale-110 duration-300"
-            >
-              <div className="fab fa-twitter-square" />
-            </a>
-            <a
-              aria-label="DEV"
-              title="mlanders's DEV Profile"
-              href="https://dev.to/mlanders"
-              className="text-5xl no-underline text-dark-600 hover:text-primary-600 transition-all hover:scale-110 duration-300"
-            >
-              <div className="fab fa-dev" />
-            </a>
-          </div>
+    <footer id="contact" className="bg-base-800 border-t border-base-700 py-24 px-8">
+      <div className="max-w-4xl mx-auto">
+
+        {/* Section label */}
+        <div className="font-mono text-primary-400 text-sm tracking-widest mb-4">
+          04 // contact
         </div>
-      </section>
-    </div>
+
+        <h2 className="text-5xl font-black text-white mb-6">Get In Touch</h2>
+        <p className="text-base-300 text-lg mb-12 max-w-xl">
+          Open to new opportunities. Drop me a line and I'll get back to you.
+        </p>
+
+        {/* Contact info row */}
+        <div className="flex flex-col sm:flex-row gap-6 mb-14 text-base-200 text-base">
+          <a
+            href="mailto:landers.mike@gmail.com"
+            className="group flex items-center gap-3 hover:text-primary-400 transition-colors"
+          >
+            <svg className="w-5 h-5 text-primary-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            landers.mike@gmail.com
+          </a>
+
+          <span className="flex items-center gap-3 text-base-300">
+            <svg className="w-5 h-5 text-primary-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            Elk Grove, CA
+          </span>
+        </div>
+
+        {/* Social links */}
+        <div className="flex items-center gap-6">
+          {socials.map(({ label, href, icon }) => (
+            <a
+              key={label}
+              aria-label={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-base-400 hover:text-primary-400 transition-all duration-200 hover:scale-110"
+            >
+              <i className={icon} />
+            </a>
+          ))}
+        </div>
+
+        {/* Bottom rule */}
+        <div className="mt-16 pt-8 border-t border-base-700 flex flex-col sm:flex-row justify-between items-center gap-2 text-base-500 text-sm font-mono">
+          <span>Mike Landers — Full Stack Developer</span>
+          <span>Elk Grove, CA · {new Date().getFullYear()}</span>
+        </div>
+
+      </div>
+    </footer>
   );
 }
 
