@@ -11,25 +11,21 @@ const smallProjects: SmallProject[] = [
     name: "Drink Tracker",
     description: "Track your alcohol consumption and celebrate sober days.",
     siteUrl: "https://drinks.landers.dev/",
-    githubUrl: null,
   },
   {
     name: "Num to String",
     description: "Type in a number and get a readable string back.",
     siteUrl: "https://num.landers.dev",
-    githubUrl: "https://github.com/mlanders/num_to_string",
   },
   {
     name: "React ToDo",
     description: "Simple Todo app with local storage persistence.",
     siteUrl: "https://todo.landers.dev/",
-    githubUrl: "https://github.com/mlanders/React-Todo",
   },
   {
     name: "Media Site",
     description: "Browse movies and TV shows via The Movie Database API.",
     siteUrl: "https://media.landers.dev/",
-    githubUrl: null,
   },
 ];
 
@@ -68,7 +64,6 @@ function Projects({ data }: ProjectsProps) {
                 name={project.name}
                 description={project.description}
                 siteUrl={project.siteUrl}
-                githubUrl={project.githubUrl}
               />
             ))}
           </div>

@@ -4,11 +4,10 @@ interface SmallProjectCardProps {
   name: string;
   description: string;
   siteUrl: string | null;
-  githubUrl: string | null;
   index: number;
 }
 
-function SmallProjectCard({ name, description, siteUrl, githubUrl, index }: SmallProjectCardProps) {
+function SmallProjectCard({ name, description, siteUrl, index }: SmallProjectCardProps) {
   return (
     <motion.article
       initial={{ opacity: 0, y: 24 }}
@@ -38,16 +37,6 @@ function SmallProjectCard({ name, description, siteUrl, githubUrl, index }: Smal
             className="text-xs font-semibold px-3.5 py-1.5 bg-primary-500/10 text-primary-300 border border-primary-500/20 rounded-md hover:bg-primary-500/20 transition-colors"
           >
             Visit Site
-          </a>
-        )}
-        {githubUrl && (
-          <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs font-semibold px-3.5 py-1.5 bg-base-700 text-base-300 border border-base-600 rounded-md hover:border-primary-500/40 transition-colors"
-          >
-            View Code
           </a>
         )}
       </div>
