@@ -8,11 +8,6 @@ interface ProjectsProps {
 
 const smallProjects: SmallProject[] = [
   {
-    name: "Drink Tracker",
-    description: "Track your alcohol consumption and celebrate sober days.",
-    siteUrl: "https://drinks.landers.dev/",
-  },
-  {
     name: "Num to String",
     description: "Type in a number and get a readable string back.",
     siteUrl: "https://num.landers.dev",
@@ -31,9 +26,11 @@ const smallProjects: SmallProject[] = [
 
 function Projects({ data }: ProjectsProps) {
   return (
-    <div id="projects" className="bg-base-900 py-24 px-8 border-t border-base-700">
+    <div
+      id="projects"
+      className="bg-base-900 py-24 px-8 border-t border-base-700"
+    >
       <div className="max-w-4xl mx-auto space-y-20">
-
         {/* Featured projects */}
         <div>
           <div className="font-mono text-primary-400 text-sm tracking-widest mb-4">
@@ -55,7 +52,9 @@ function Projects({ data }: ProjectsProps) {
           <div className="font-mono text-primary-400 text-sm tracking-widest mb-4">
             03 // more work
           </div>
-          <h2 className="text-5xl font-black text-white mb-12">Small Projects</h2>
+          <h2 className="text-5xl font-black text-white mb-12">
+            Small Projects
+          </h2>
           <div className="grid sm:grid-cols-2 gap-5">
             {smallProjects.map((project, i) => (
               <SmallProjectCard
@@ -68,7 +67,6 @@ function Projects({ data }: ProjectsProps) {
             ))}
           </div>
         </div>
-
       </div>
     </div>
   );
